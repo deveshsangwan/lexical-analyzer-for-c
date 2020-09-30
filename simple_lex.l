@@ -18,6 +18,7 @@ alnum       {alpha}|{digit}
 print       [ -~]
 
 ARRAY       {alpha}+{alnum}*"["+"]"
+POINTER     "*"+{alpha}+{alnum}*
 ID          {alpha}+{alnum}*
 ICONST      "0"|[0-9]{digit}*
 FCONST      "0"|{digit}*"."{digit}+
@@ -73,6 +74,7 @@ STRING      \"{print}*\"
 "&"             { ret_print("REFER"); }
 
 {preprocessor_directives} { ret_print("PREPROCESSOR DIRECTIVES"); }
+{POINTER}       { ret_print("POINTER"); }
 {ARRAY}         { ret_print("ARRAY"); }
 {ID}            { ret_print("ID"); }
 {ICONST}        { ret_print("ICONST"); }

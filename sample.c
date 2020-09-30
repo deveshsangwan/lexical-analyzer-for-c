@@ -4,7 +4,7 @@ int main(){
     int a = 10;
     int b = 0;
     //this is a comment
-
+    int *ptr = &a;
 
 
 
@@ -19,7 +19,7 @@ int main(){
     */
 
 
-   
+
     for (int i = 0; i < 8; i++)
     {
         b += arr[i];
