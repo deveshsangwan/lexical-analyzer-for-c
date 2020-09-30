@@ -5,6 +5,7 @@
     #include <stdlib.h>
     #include <string.h>
     int lineno = 1; // initialize to 1
+    int words = 0;
     void ret_print(char *token_type);
     void yyerror();
 %}
@@ -92,6 +93,7 @@ STRING      \"{print}*\"
 %%
  
 void ret_print(char *token_type){
+    words++;
     printf("yytext: %s\ttoken: %s\tlineno: %d\n", yytext, token_type, lineno);
 }
  
@@ -104,5 +106,6 @@ int main(int argc, char *argv[]){
     yyin = fopen(argv[1], "r");
     yylex();
     fclose(yyin);
+    printf("Number of Lexemes = %d\n", words);
     return 0;
 }
