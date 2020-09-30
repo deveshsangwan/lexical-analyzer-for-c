@@ -80,8 +80,9 @@ STRING      \"{print}*\"
 {CCONST}        { ret_print("CCONST"); }
 {STRING}        { ret_print("STRING"); }
  
- 
+
 "\n"            { lineno += 1; }
+"\n"*           { lineno += 1; }
 [ \t\r\f]+          /* eat up whitespace */
  
 .               { yyerror("Unrecognized character"); }
