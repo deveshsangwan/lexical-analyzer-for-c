@@ -4,7 +4,7 @@
 int main(){
     int a = 10;
     int b = 0;
-    char str[] = "Hello";
+    char str[] = "Hello World";
     //this is a comment
     int *ptr = &a;
 
