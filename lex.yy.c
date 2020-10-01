@@ -354,8 +354,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 51
-#define YY_END_OF_BUFFER 52
+#define YY_NUM_RULES 50
+#define YY_END_OF_BUFFER 51
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -365,12 +365,12 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[176] =
     {   0,
-       48,   48,    0,    0,   52,   50,   49,   47,   25,   50,
-       50,   38,   50,   28,   29,   20,   19,   36,   19,   35,
+       47,   47,    0,    0,   51,   49,   48,   47,   25,   49,
+       49,   38,   49,   28,   29,   20,   19,   36,   19,   35,
        21,   43,   43,   34,   27,   37,   27,   42,   42,   42,
        42,   42,   42,   42,   42,   42,   42,   30,   31,   42,
-       42,   42,   42,   42,   42,   42,   42,   42,   32,   50,
-       33,    4,    6,    5,   49,   48,   26,    0,   46,    0,
+       42,   42,   42,   42,   42,   42,   42,   42,   32,   49,
+       33,    4,    6,    5,   48,   47,   26,    0,   46,    0,
        24,    0,    0,    0,   40,   22,   44,    2,    1,    0,
        43,   27,   42,   42,    0,   42,   42,   42,   42,   42,
        42,   42,   11,   42,   42,   42,   42,   42,   42,   42,
@@ -1183,27 +1183,21 @@ YY_RULE_SETUP
 { lineno += 1; }
 	YY_BREAK
 case 48:
-/* rule 48 can match eol */
 YY_RULE_SETUP
 #line 89 "simple_lex.l"
-{ lineno += 1; }
+/* eat up whitespace */
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 90 "simple_lex.l"
-/* eat up whitespace */
+#line 91 "simple_lex.l"
+{ yyerror("Unrecognized character"); }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 92 "simple_lex.l"
-{ yyerror("Unrecognized character"); }
-	YY_BREAK
-case 51:
-YY_RULE_SETUP
-#line 94 "simple_lex.l"
+#line 93 "simple_lex.l"
 ECHO;
 	YY_BREAK
-#line 1207 "lex.yy.c"
+#line 1201 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(ML_COMMENT):
 	yyterminate();
@@ -2209,7 +2203,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 94 "simple_lex.l"
+#line 93 "simple_lex.l"
 
  
 void ret_print(char *token_type){

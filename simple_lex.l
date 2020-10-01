@@ -84,7 +84,6 @@ STRING      \"{print}*\"
 {STRING}        { ret_print("STRING"); }
  
 
-"\n"            { lineno += 1; }
 "\n"*           { lineno += 1; }
 [ \t\r\f]+          /* eat up whitespace */
  
