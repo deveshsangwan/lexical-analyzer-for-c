@@ -885,9 +885,9 @@ YY_DECL
 		}
 
 	{
-#line 29 "simple_lex.l"
+#line 28 "simple_lex.l"
 
-#line 31 "simple_lex.l"
+#line 30 "simple_lex.l"
  
 #line 893 "lex.yy.c"
 
@@ -948,254 +948,254 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 32 "simple_lex.l"
+#line 31 "simple_lex.l"
 { printf("Eat up comment at line %d\n", lineno); } 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 34 "simple_lex.l"
+#line 33 "simple_lex.l"
 { printf("Eat up comment from line %d ", lineno); BEGIN(ML_COMMENT); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 35 "simple_lex.l"
+#line 34 "simple_lex.l"
 { printf("to line %d\n", lineno); BEGIN(INITIAL); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 36 "simple_lex.l"
+#line 35 "simple_lex.l"
 
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 37 "simple_lex.l"
+#line 36 "simple_lex.l"
 
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 38 "simple_lex.l"
+#line 37 "simple_lex.l"
 { lineno += 1; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 41 "simple_lex.l"
+#line 40 "simple_lex.l"
 { ret_print("KEYWORD_CHAR"); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 42 "simple_lex.l"
+#line 41 "simple_lex.l"
 { ret_print("KEYWORD_INT"); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 43 "simple_lex.l"
+#line 42 "simple_lex.l"
 { ret_print("KEYWORD_FLOAT"); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 44 "simple_lex.l"
+#line 43 "simple_lex.l"
 { ret_print("KEYWORD_DOUBLE"); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 45 "simple_lex.l"
+#line 44 "simple_lex.l"
 { ret_print("KEYWORD_IF"); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 46 "simple_lex.l"
+#line 45 "simple_lex.l"
 { ret_print("KEYWORD_ELSE"); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 47 "simple_lex.l"
+#line 46 "simple_lex.l"
 { ret_print("KEYWORD_WHILE"); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 48 "simple_lex.l"
+#line 47 "simple_lex.l"
 { ret_print("KEYWORD_FOR"); }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 49 "simple_lex.l"
+#line 48 "simple_lex.l"
 { ret_print("KEYWORD_CONTINUE"); }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 50 "simple_lex.l"
+#line 49 "simple_lex.l"
 { ret_print("KEYWORD_BREAK"); }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 51 "simple_lex.l"
+#line 50 "simple_lex.l"
 { ret_print("KEYWORD_VOID"); }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 52 "simple_lex.l"
+#line 51 "simple_lex.l"
 { ret_print("KEYWORD_RETURN"); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 55 "simple_lex.l"
+#line 54 "simple_lex.l"
 { ret_print("ADDOP"); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 56 "simple_lex.l"
+#line 55 "simple_lex.l"
 { ret_print("MULOP"); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 57 "simple_lex.l"
+#line 56 "simple_lex.l"
 { ret_print("DIVOP"); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 58 "simple_lex.l"
+#line 57 "simple_lex.l"
 { ret_print("INCR"); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 59 "simple_lex.l"
+#line 58 "simple_lex.l"
 { ret_print("OROP"); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 60 "simple_lex.l"
+#line 59 "simple_lex.l"
 { ret_print("ANDOP"); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 61 "simple_lex.l"
+#line 60 "simple_lex.l"
 { ret_print("NOTOP"); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 62 "simple_lex.l"
+#line 61 "simple_lex.l"
 { ret_print("EQUOP"); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 63 "simple_lex.l"
+#line 62 "simple_lex.l"
 { ret_print("RELOP"); }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 66 "simple_lex.l"
+#line 65 "simple_lex.l"
 { ret_print("LPAREN"); }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 67 "simple_lex.l"
+#line 66 "simple_lex.l"
 { ret_print("RPAREN"); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 68 "simple_lex.l"
+#line 67 "simple_lex.l"
 { ret_print("LBRACK"); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 69 "simple_lex.l"
+#line 68 "simple_lex.l"
 { ret_print("RBRACK"); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 70 "simple_lex.l"
+#line 69 "simple_lex.l"
 { ret_print("LBRACE"); }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 71 "simple_lex.l"
+#line 70 "simple_lex.l"
 { ret_print("RBRACE"); }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 72 "simple_lex.l"
+#line 71 "simple_lex.l"
 { ret_print("SEMI"); }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 73 "simple_lex.l"
+#line 72 "simple_lex.l"
 { ret_print("DOT"); }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 74 "simple_lex.l"
+#line 73 "simple_lex.l"
 { ret_print("COMMA"); }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 75 "simple_lex.l"
+#line 74 "simple_lex.l"
 { ret_print("ASSIGN"); }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 76 "simple_lex.l"
+#line 75 "simple_lex.l"
 { ret_print("REFER"); }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 78 "simple_lex.l"
+#line 77 "simple_lex.l"
 { ret_print("PREPROCESSOR DIRECTIVES"); }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 79 "simple_lex.l"
+#line 78 "simple_lex.l"
 { ret_print("POINTER"); }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 80 "simple_lex.l"
+#line 79 "simple_lex.l"
 { ret_print("ARRAY"); }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 81 "simple_lex.l"
+#line 80 "simple_lex.l"
 { ret_print("ID"); }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 82 "simple_lex.l"
+#line 81 "simple_lex.l"
 { ret_print("ICONST"); }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 83 "simple_lex.l"
+#line 82 "simple_lex.l"
 { ret_print("FCONST"); }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 84 "simple_lex.l"
+#line 83 "simple_lex.l"
 { ret_print("CCONST"); }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 85 "simple_lex.l"
+#line 84 "simple_lex.l"
 { ret_print("STRING"); }
 	YY_BREAK
 case 47:
 /* rule 47 can match eol */
 YY_RULE_SETUP
-#line 88 "simple_lex.l"
+#line 87 "simple_lex.l"
 { lineno += 1; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 89 "simple_lex.l"
+#line 88 "simple_lex.l"
 /* eat up whitespace */
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 91 "simple_lex.l"
+#line 90 "simple_lex.l"
 { yyerror("Unrecognized character"); }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 93 "simple_lex.l"
+#line 92 "simple_lex.l"
 ECHO;
 	YY_BREAK
 #line 1202 "lex.yy.c"
@@ -2204,7 +2204,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 93 "simple_lex.l"
+#line 92 "simple_lex.l"
 
  
 void ret_print(char *token_type){
