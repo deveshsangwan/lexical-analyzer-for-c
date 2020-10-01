@@ -18,7 +18,7 @@ alnum       {alpha}|{digit}
 print       [ -~]
 
 preprocessor_directives #.*
-ARRAY       {alpha}+{alnum}*"[".+"]"
+ARRAY       ({alpha}+{alnum}*"[".+"]")|({alpha}+{alnum}*"["+"]")
 POINTER     "*"+{alpha}+{alnum}*
 ID          {alpha}+{alnum}*
 ICONST      "0"|[0-9]{digit}*
