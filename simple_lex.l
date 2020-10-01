@@ -17,7 +17,7 @@ digit       [0-9]
 alnum       {alpha}|{digit}
 print       [ -~]
 
-preprocessor_directives "#include <stdio.h>"
+preprocessor_directives #.*
 ARRAY       {alpha}+{alnum}*"["+"]"
 POINTER     "*"+{alpha}+{alnum}*
 ID          {alpha}+{alnum}*
