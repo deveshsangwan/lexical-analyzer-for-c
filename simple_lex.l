@@ -12,12 +12,12 @@
  
 %x ML_COMMENT
 
-preprocessor_directives "#include <stdio.h>"
 alpha       [a-zA-Z]
 digit       [0-9]
 alnum       {alpha}|{digit}
 print       [ -~]
 
+preprocessor_directives "#include <stdio.h>"
 ARRAY       {alpha}+{alnum}*"["+"]"
 POINTER     "*"+{alpha}+{alnum}*
 ID          {alpha}+{alnum}*
