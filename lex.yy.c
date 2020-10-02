@@ -661,8 +661,8 @@ char *yytext;
     #include <stdio.h>
     #include <stdlib.h>
     #include <string.h>
-    int lineno = 1; // initialize to 1
-    int words = 0;
+    int lineno = 1; // initialized number of line with 1
+    int words = 0;  //number of lexemes
     void ret_print(char *token_type);
     void yyerror();
 #line 669 "lex.yy.c"
